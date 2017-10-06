@@ -23,7 +23,7 @@
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     layout.itemSize = CGSizeMake(120, 50);
     CGFloat w = self.view.frame.size.width;
-    CGFloat h = 50;
+    CGFloat h = 50;//100就没问题，cell就会显示
     
     self.collection = [[ASCollectionNode alloc] initWithFrame:CGRectMake(0, 64, w, h) collectionViewLayout:layout];
     self.collection.delegate = self;
